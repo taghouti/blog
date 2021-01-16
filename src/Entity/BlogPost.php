@@ -273,4 +273,12 @@ class BlogPost
     {
         $this->setUpdatedAt(new DateTime());
     }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->title;
+    }
 }
