@@ -15,6 +15,7 @@ composer require validator
 composer require template
 composer require security-bundle
 composer require --dev maker-bundle
+composer require form
 ```
 
 ### Setup database
