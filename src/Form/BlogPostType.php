@@ -2,7 +2,9 @@
 
 namespace App\Form;
 
+use App\Entity\Author;
 use App\Entity\BlogPost;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -19,6 +21,9 @@ class BlogPostType extends AbstractType
             ->add('createdAt')
             ->add('updatedAt')
             ->add('author')
+            ->add('author', EntityType::class, [
+                'class' => Author::class
+            ])
         ;
     }
 

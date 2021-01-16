@@ -311,4 +311,12 @@ class Author
         return $this->github;
     }
 
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->name;
+    }
+
 }
