@@ -16,6 +16,7 @@ composer require template
 composer require security-bundle
 composer require --dev maker-bundle
 composer require form
+composer require symfony/asset
 ```
 
 ### Setup database
@@ -49,6 +50,7 @@ php bin/console doctrine:fixtures:load
 * Install server
 
 ```shell
+composer install
 composer require server --dev
 ```
 
