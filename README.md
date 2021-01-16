@@ -37,6 +37,12 @@ php bin/console doctrine:database:create
 composer require server --dev
 ```
 
+* Migrate database
+
+```shell
+php bin/console doctrine:migrations:migrate
+```
+
 * Run the server
 
 ```shell
