@@ -38,6 +38,13 @@
         </tbody>
     </table>
 
+    <h1>Create new Comment</h1>
+
+    {{ form_start(comment_form) }}
+    {{ form_widget(comment_form) }}
+    <button class="btn">{{ button_label|default('Save') }}</button>
+    {{ form_end(comment_form) }}
+
     <a href="{{ path('blog_post_index') }}">back to list</a>
 
     <a href="{{ path('blog_post_edit', {'id': blog_post.id}) }}">edit</a>
