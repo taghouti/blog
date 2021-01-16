@@ -79,7 +79,7 @@ class BlogPost
      *
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -91,7 +91,7 @@ class BlogPost
      *
      * @return BlogPost
      */
-    public function setTitle(string $title): BlogPost
+    public function setTitle($title)
     {
         $this->title = $title;
 
@@ -103,7 +103,7 @@ class BlogPost
      *
      * @return string
      */
-    public function getTitle(): string
+    public function getTitle()
     {
         return $this->title;
     }
@@ -115,7 +115,7 @@ class BlogPost
      *
      * @return BlogPost
      */
-    public function setSlug(string $slug): BlogPost
+    public function setSlug($slug)
     {
         $this->slug = $slug;
 
@@ -127,7 +127,7 @@ class BlogPost
      *
      * @return string
      */
-    public function getSlug(): string
+    public function getSlug()
     {
         return $this->slug;
     }
@@ -139,7 +139,7 @@ class BlogPost
      *
      * @return BlogPost
      */
-    public function setDescription(string $description): BlogPost
+    public function setDescription($description)
     {
         $this->description = $description;
 
@@ -151,7 +151,7 @@ class BlogPost
      *
      * @return string
      */
-    public function getDescription(): string
+    public function getDescription()
     {
         return $this->description;
     }
@@ -163,7 +163,7 @@ class BlogPost
      *
      * @return BlogPost
      */
-    public function setBody(string $body): BlogPost
+    public function setBody($body)
     {
         $this->body = $body;
 
@@ -175,7 +175,7 @@ class BlogPost
      *
      * @return string
      */
-    public function getBody(): string
+    public function getBody()
     {
         return $this->body;
     }
@@ -187,7 +187,7 @@ class BlogPost
      *
      * @return BlogPost
      */
-    public function setAuthor(Author $author): BlogPost
+    public function setAuthor($author)
     {
         $this->author = $author;
 
@@ -199,7 +199,7 @@ class BlogPost
      *
      * @return Author
      */
-    public function getAuthor(): Author
+    public function getAuthor()
     {
         return $this->author;
     }
@@ -211,7 +211,7 @@ class BlogPost
      *
      * @return BlogPost
      */
-    public function setCreatedAt(DateTime $createdAt): BlogPost
+    public function setCreatedAt($createdAt)
     {
         $this->createdAt = $createdAt;
 
@@ -223,7 +223,7 @@ class BlogPost
      *
      * @return DateTime
      */
-    public function getCreatedAt(): DateTime
+    public function getCreatedAt()
     {
         return $this->createdAt;
     }
@@ -235,7 +235,7 @@ class BlogPost
      *
      * @return BlogPost
      */
-    public function setUpdatedAt(DateTime $updatedAt): BlogPost
+    public function setUpdatedAt($updatedAt)
     {
         $this->updatedAt = $updatedAt;
 
@@ -247,7 +247,7 @@ class BlogPost
      *
      * @return DateTime
      */
-    public function getUpdatedAt(): DateTime
+    public function getUpdatedAt()
     {
         return $this->updatedAt;
     }
@@ -255,7 +255,7 @@ class BlogPost
     /**
      * @ORM\PrePersist
      */
-    public function prePersist(): void
+    public function prePersist()
     {
         if (!$this->getCreatedAt()) {
             $this->setCreatedAt(new DateTime());
@@ -269,7 +269,7 @@ class BlogPost
     /**
      * @ORM\PreUpdate
      */
-    public function preUpdate(): void
+    public function preUpdate()
     {
         $this->setUpdatedAt(new DateTime());
     }

@@ -90,7 +90,7 @@ class Author
      *
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -102,7 +102,7 @@ class Author
      *
      * @return Author
      */
-    public function setName(string $name): Author
+    public function setName($name)
     {
         $this->name = $name;
 
@@ -114,7 +114,7 @@ class Author
      *
      * @return string
      */
-    public function getName(): string
+    public function getName()
     {
         return $this->name;
     }
@@ -126,7 +126,7 @@ class Author
      *
      * @return Author
      */
-    public function setTitle(string $title): Author
+    public function setTitle($title)
     {
         $this->title = $title;
 
@@ -138,7 +138,7 @@ class Author
      *
      * @return string
      */
-    public function getTitle(): string
+    public function getTitle()
     {
         return $this->title;
     }
@@ -150,7 +150,7 @@ class Author
      *
      * @return Author
      */
-    public function setUsername(string $username): Author
+    public function setUsername($username)
     {
         $this->username = $username;
 
@@ -162,7 +162,7 @@ class Author
      *
      * @return string
      */
-    public function getUsername(): string
+    public function getUsername()
     {
         return $this->username;
     }
@@ -174,7 +174,7 @@ class Author
      *
      * @return Author
      */
-    public function setCompany(string $company): Author
+    public function setCompany($company)
     {
         $this->company = $company;
 
@@ -186,7 +186,7 @@ class Author
      *
      * @return string
      */
-    public function getCompany(): string
+    public function getCompany()
     {
         return $this->company;
     }
@@ -198,7 +198,7 @@ class Author
      *
      * @return Author
      */
-    public function setShortBio(string $shortBio): Author
+    public function setShortBio($shortBio)
     {
         $this->shortBio = $shortBio;
 
@@ -210,7 +210,7 @@ class Author
      *
      * @return string
      */
-    public function getShortBio(): string
+    public function getShortBio()
     {
         return $this->shortBio;
     }
@@ -222,7 +222,7 @@ class Author
      *
      * @return Author
      */
-    public function setPhone(string $phone): Author
+    public function setPhone($phone)
     {
         $this->phone = $phone;
 
@@ -234,7 +234,7 @@ class Author
      *
      * @return string
      */
-    public function getPhone(): string
+    public function getPhone()
     {
         return $this->phone;
     }
@@ -246,7 +246,7 @@ class Author
      *
      * @return Author
      */
-    public function setFacebook(string $facebook): Author
+    public function setFacebook($facebook)
     {
         $this->facebook = $facebook;
 
@@ -258,7 +258,7 @@ class Author
      *
      * @return string
      */
-    public function getFacebook(): string
+    public function getFacebook()
     {
         return $this->facebook;
     }
@@ -270,7 +270,7 @@ class Author
      *
      * @return Author
      */
-    public function setTwitter(string $twitter): Author
+    public function setTwitter($twitter)
     {
         $this->twitter = $twitter;
 
@@ -282,7 +282,7 @@ class Author
      *
      * @return string
      */
-    public function getTwitter(): string
+    public function getTwitter()
     {
         return $this->twitter;
     }
@@ -294,7 +294,7 @@ class Author
      *
      * @return Author
      */
-    public function setGithub(string $github): Author
+    public function setGithub($github)
     {
         $this->github = $github;
 
@@ -306,7 +306,7 @@ class Author
      *
      * @return string
      */
-    public function getGithub(): string
+    public function getGithub()
     {
         return $this->github;
     }
