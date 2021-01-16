@@ -25,6 +25,20 @@ composer require --dev maker-bundle
 
 * Create Database
 
-````shell
+```shell
 php bin/console doctrine:database:create
  ```
+
+### Run project
+
+* Install server
+
+```shell
+composer require server --dev
+```
+
+* Run the server
+
+```shell
+php bin/console server:run
+```
