@@ -29,6 +29,20 @@ composer require --dev maker-bundle
 php bin/console doctrine:database:create
  ```
 
+### Dummy data
+
+* Install fixtures
+
+```shell
+composer require --dev doctrine/doctrine-fixtures-bundle
+```
+
+* Run fixtures
+
+```shell
+php bin/console doctrine:fixtures:load
+```
+
 ### Run project
 
 * Install server
